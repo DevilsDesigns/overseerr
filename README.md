@@ -40,29 +40,27 @@
 
 ## Requirments
 1. Git Bash **[Git Direct Downoad](https://git-scm.com/download/win)**
-2. NodeJs [NodeJS Direct x64 Download](https://nodejs.org/dist/v14.17.3/node-v14.17.3-x64.msi)** **[NodeJS Direct x86 Download](https://nodejs.org/dist/v14.17.3/node-v14.17.3-x86.msi)**
+2. NodeJs **[NodeJS Direct x64 Download](https://nodejs.org/dist/v14.17.3/node-v14.17.3-x64.msi)** **[NodeJS Direct x86 Download](https://nodejs.org/dist/v14.17.3/node-v14.17.3-x86.msi)**
 
 **NOTE IMPORTANT**
 MAKE SURE YOU HAVE ALL WINDWOS UPDATE PENDED AND AFTER INSTALLING THE PROGRAMS ABOVE RESTART THE OS BEFORE CONTINUE FOR GOOD MEASURES.
 
 ## Running on Windows
 
-1. Open Powershell with administrative rights.
+1. Open Powershell
 2. Get yarn by typing in powershell `npm install --global yarn`
 3. Now run in powershell `npm install -g win-node-env` so it can correctly build for windows.
-4. Once yarn is installed close powershell and open a new powershell with adminstrative privelages.
+4. Once yarn restart your console
 5. Go to a directory where you want your app to run. I normally run all binaries in `C:\Tools\(appname)` so mine is C:\Tools
-6. Then run `git clone https://github.com/sct/overseerr.git`
+6. Then run `git clone https://github.com/acvigue/jellyseer.git`
 7. Then once cloned youll see it ripped a new folder in `C:\Tools` its a folder called `overseerr`
 8. Now open the folder overseerr directory in powershell by running `cd C:\Tools\overseerr`
 9. once in the directory `C:\Tools\overseerr` run `yarn`
-10. Then once finished (it will take a bit of a long time) run `yarn build`
+10. Then once finished (it will take a bit of a long time) build the application with `yarn build`, or if attempting to start a dev environment, run the `yarn dev` command
 11. If it built with no errors then run `yarn start` which will run the overseerr and load up localhost:5055 on your browser.
 12. Watch the powershell and just wait for the webpage on your browser to run oveseerr you should see the homepage once it is loaded in powershell.
 
 ## Auto-Start at Windows Startup
- ### Requirmenets
- Install NSSM [NSSM Direct Download](https://nssm.cc/release/nssm-2.24.zip)
 
 ## Setup NSSM with Overserr
 1. type in an administrative Powershell `nssm install Overseerr`
